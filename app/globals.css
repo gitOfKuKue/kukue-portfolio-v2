@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f8f8;
+  --foreground: #222222;
+  --secondary: #7b7b7b;
+  --standard-radius: 20px;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-font-color: var(--foreground);
+  --color-secondary-font-color: var(--secondary);
+
+  /* Map standard Tailwind utilities to our custom fonts */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-bebas), sans-serif;
+}
