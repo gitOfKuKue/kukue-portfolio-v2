@@ -50,7 +50,7 @@ const Footer = ({ className }: { className?: string }) => {
               Navigation
             </h3>
             <div className="flex flex-col gap-3">
-              {menus.map((menu) => (
+              {menus.mainMenus.map((menu) => (
                 <Link
                   href={menu.href}
                   key={menu.name}

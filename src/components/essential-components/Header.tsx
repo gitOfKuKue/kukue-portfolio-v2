@@ -22,7 +22,7 @@ const Header = ({ className }: { className?: string }) => {
             <Link href="/">
               <Image src={logo} alt="Logo Pic" className="w-25" />
             </Link>
-            {menus.map((menu) => (
+            {menus?.mainMenus?.map((menu) => (
               <Link
                 href={menu.href}
                 key={menu.name}
@@ -41,6 +41,20 @@ const Header = ({ className }: { className?: string }) => {
             <Phone size={20} />
             Book a call
           </Link>
+        </Container>
+
+        <Container className="py-5">
+          <div className="flex items-center gap-5">
+            {menus?.subMenus?.map((menu) => (
+              <Link
+                href={menu.href}
+                key={menu.name}
+                className="text-xl text-font-color hover:underline decoration-2"
+              >
+                {menu.name}
+              </Link>
+            ))}
+          </div>
         </Container>
       </header>
       <div className="h-[80px]"></div>

@@ -10,9 +10,15 @@ import { create } from "zustand";
 
 interface MenuState {
   menus: {
-    name: string;
-    href: string;
-  }[];
+    mainMenus: {
+      name: string;
+      href: string;
+    }[];
+    subMenus: {
+      name: string;
+      href: string;
+    }[];
+  };
   resources: {
     name: string;
     href: string;
@@ -28,12 +34,18 @@ interface ContactState {
 }
 
 const useLinks = create<MenuState & ContactState>((set) => ({
-  menus: [
-    { name: "About", href: "/#about-me" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Services", href: "/services" },
-    { name: "Blog", href: "/blog" },
-  ],
+  menus: {
+    mainMenus: [
+      { name: "About", href: "/#about-me" },
+      { name: "Portfolio", href: "/portfolio" },
+      { name: "Services", href: "/services" },
+      { name: "Blog", href: "/blog" },
+    ],
+    subMenus: [
+      { name: "Projects", href: "/projects" },
+      { name: "Versions", href: "/version" },
+    ],
+  },
   resources: [
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },
