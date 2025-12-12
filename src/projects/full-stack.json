@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "AYEE - Online Shopping",
+    "description": "AYEE is an online shopping platform that allows users to browse and purchase products from various merchants.",
+    "details": "A comprehensive e-commerce solution engineered to facilitate seamless interactions between merchants and customers. Key features include a robust product catalog with advanced filtering options, a secure shopping cart and checkout process, user authentication and profile management, and a dedicated merchant dashboard for inventory and order management. Built with performance and scalability in mind, utilizing modern web technologies to ensure a responsive and engaging user experience.",
+    "technologies": ["React.JS", "Node.JS", "MongoDB", "Tailwind CSS"],
+    "images": [
+      "/projects-images/AYEE-Online-Store/main-section.png",
+      "/projects-images/AYEE-Online-Store/detail.png",
+      "/projects-images/AYEE-Online-Store/market-cart.png",
+      "/projects-images/AYEE-Online-Store/products.png"
+    ],
+    "type": "personal",
+    "github": "https://github.com/gitOfKuKue/AYEE-Online-Shop-v2.0.git",
+    "startDate": "2025-11-12",
+    "endDate": "Present"
+  },
+  {
+    "id": 2,
+    "title": "Portfolio",
+    "description": "Portfolio is a personal website that showcases my skills and projects.",
+    "details": "A modern, high-performance personal portfolio website designed to effectively showcase technical skills, professional experience, and project highlights. Features a responsive design, interactive UI elements, and optimized SEO. Implements server-side rendering for fast load times and utilizes a modular component architecture for maintainability. Includes sections for a bio, resume download, project gallery, and contact form, serving as a central hub for professional online presence.",
+    "technologies": ["React.JS", "Next.JS", "Tailwind CSS", "TypeScript"],
+    "images": ["/projects-images/portfolio-v2/about-us.png"],
+    "type": "personal",
+    "github": "",
+    "startDate": "2026-12-12",
+    "endDate": "2040-12-30"
+  },
+  {
+    "id": 3,
+    "title": "SBS Mangaement System",
+    "description": "SBS Mangaement System is a web application that allows users to manage their school bus services.",
+    "details": "An integrated management system designed to streamline school bus service operations. Provides tools for route planning, driver and vehicle management, student ridership tracking, and real-time communication. Features a user-friendly interface for administrators to monitor fleet status and generating reports. Enhances operational efficiency and safety compliance through digital record-keeping and automated scheduling capabilities.",
+    "technologies": ["React.JS", "Tailwind CSS"],
+    "images": [""],
+    "type": "freelancer",
+    "github": "",
+    "startDate": "2025-12-12",
+    "endDate": "2030-11-12"
+  }
+]

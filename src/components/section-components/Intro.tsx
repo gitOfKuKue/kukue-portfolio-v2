@@ -22,7 +22,9 @@ const Intro = () => {
           </div>
           <div className="text-font-color">
             <h1 className="text-[200px] leading-40">Hello!</h1>
-            <p className="text-3xl font-extralight">- It's Ku Kue, {role}.</p>
+            <p className="text-3xl font-extralight">
+              - It's <span className="font-bold">Ku Kue</span>, {role}.
+            </p>
           </div>
           <div>
             <button className="text-font-color">
