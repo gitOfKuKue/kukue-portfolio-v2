@@ -2,6 +2,10 @@ import useRole from "@/src/hook/useRole";
 import { ChevronDown } from "lucide-react";
 import React from "react";
 
+import myPicture from "@/src/assets/images/my-pic4.png";
+import Image from "next/image";
+import { url } from "inspector";
+
 const Intro = () => {
   const { role } = useRole();
 
@@ -20,12 +24,12 @@ const Intro = () => {
               <h2>Startup raised</h2>
             </div>
           </div>
-          <div className="text-font-color">
+          {/* <div className="text-font-color">
             <h1 className="text-[200px] leading-40">Hello!</h1>
             <p className="text-3xl font-extralight">
               - It's <span className="font-bold">Ku Kue</span>, {role}.
             </p>
-          </div>
+          </div> */}
           <div>
             <button className="text-font-color">
               Scroll Down.
@@ -35,8 +39,17 @@ const Intro = () => {
         </div>
       </div>
       {/* My Picture */}
-      <div className="w-150 border">
-        {/* <Image src={myPicture} alt="My Picture" className="w-150" /> */}
+      <div className="absolute left-1/2 -translate-x-1/2 w-full">
+        <h1 className="absolute text-[300px] left-1/2 -translate-x-1/2 -top-40 -z-10 font-extrabold">Hello!</h1>
+        <div className="flex items-center">
+          <h2 className="text-6xl font-light absolute left-0">I'm <span className="font-bold">Ku Kue</span>.</h2>
+          <Image
+          src={myPicture}
+          alt="My Picture"
+          className="z-10 w-120 mx-auto object-cover"
+        />
+        <h2 className="text-6xl font-light absolute right-0">{role}</h2>
+        </div>
       </div>
     </div>
   );

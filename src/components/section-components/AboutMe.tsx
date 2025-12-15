@@ -2,7 +2,7 @@ import { ChevronsRight, CornerDownRight, Earth } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-import myPicture from "@/src/assets/images/my-pic4.png";
+import myPicture from "@/src/assets/images/my-pic2.svg"
 import myPicture2 from "@/src/assets/images/my-pic1.jpg";
 
 const AboutMe = () => {
@@ -36,7 +36,7 @@ const AboutMe = () => {
           <Image
             src={myPicture}
             alt="My Picture"
-            className="w-full object-cover"
+            className="-my-30 w-full object-cover"
           />
         </div>
       </div>
