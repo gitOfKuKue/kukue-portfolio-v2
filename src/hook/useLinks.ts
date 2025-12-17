@@ -38,8 +38,8 @@ const useLinks = create<MenuState & ContactState>((set) => ({
     mainMenus: [
       { name: "About", href: "/#about-me" },
       { name: "Portfolio", href: "/portfolio" },
-      { name: "Services", href: "/services" },
-      { name: "Blog", href: "/blog" },
+      { name: "Skills", href: "/skills" },
+      { name: "Contact", href: "/contact" },
     ],
     subMenus: [
       { name: "Projects", href: "/projects" },
@@ -64,17 +64,17 @@ const useLinks = create<MenuState & ContactState>((set) => ({
     },
     {
       platform: "Linkedin",
-      href: "",
+      href: "https://www.linkedin.com/in/thu-htet-naing/",
       icon: faLinkedin,
     },
     {
       platform: "Facebook",
-      href: "",
+      href: "https://www.facebook.com/share/1CJcPU6Fwu/?mibextid=wwXIfr",
       icon: faFacebook,
     },
     {
       platform: "Instagram",
-      href: "",
+      href: "https://www.instagram.com/ichbin_kukue",
       icon: faInstagram,
     },
   ],
